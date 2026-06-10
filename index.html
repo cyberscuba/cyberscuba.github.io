@@ -1,1 +1,348 @@
-<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/favicon.ico><title>Carlos A Martínez</title><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/3.6.95/css/materialdesignicons.min.css><link href=/css/app.9dde83d0.css rel=preload as=style><link href=/css/chunk-vendors.290fce32.css rel=preload as=style><link href=/js/app.f4ed5c08.js rel=preload as=script><link href=/js/chunk-vendors.c4faeb7a.js rel=preload as=script><link href=/css/chunk-vendors.290fce32.css rel=stylesheet><link href=/css/app.9dde83d0.css rel=stylesheet></head><body><noscript><strong>Lo sentimos, pero este currículum no funciona correctamente sin JavaScript habilitado. Por favor, activelo para continuar.</strong></noscript><div id=app></div><script src=/js/chunk-vendors.c4faeb7a.js></script><script src=/js/app.f4ed5c08.js></script></body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carlos Andrés Martínez - Cloud Architect & Security Lead | AWS Azure Kubernetes | DevOps Automation | IaC Terraform | Ciberseguridad Multi-Cloud">
+    <meta name="keywords" content="Cloud Architecture, DevOps, Ciberseguridad, AWS, Azure, Kubernetes, Terraform, IaC, Security, PCI-DSS, Linux, Hardening">
+    <title>Carlos Andrés Martínez | Cloud Architect & Security Lead</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: #1a1a1a;
+            line-height: 1.6;
+            background: #f8f9fa;
+            padding: 20px;
+        }
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            background: white;
+            padding: 45px 50px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+        header {
+            border-bottom: 3px solid #0056b3;
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+        }
+        h1 {
+            font-size: 26px;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 5px;
+            letter-spacing: -0.5px;
+        }
+        .headline {
+            font-size: 15px;
+            color: #0056b3;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            font-size: 13px;
+            color: #555;
+        }
+        .contact a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin-bottom: 28px;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #000;
+            margin-bottom: 16px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        .summary {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #333;
+            margin-bottom: 0;
+        }
+        .skills-block {
+            margin-bottom: 14px;
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 20px;
+        }
+        .skill-category {
+            font-weight: 600;
+            color: #000;
+            font-size: 14px;
+        }
+        .skill-list {
+            color: #444;
+            font-size: 14px;
+        }
+        .job {
+            margin-bottom: 24px;
+            page-break-inside: avoid;
+        }
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 6px;
+            gap: 15px;
+        }
+        .job-title {
+            font-weight: 600;
+            color: #000;
+            font-size: 15px;
+        }
+        .company {
+            color: #0056b3;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        .date {
+            color: #888;
+            font-size: 13px;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .job-description {
+            color: #666;
+            font-size: 13px;
+            margin: 8px 0 10px 0;
+            line-height: 1.6;
+        }
+        .achievements {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        .achievements li {
+            color: #555;
+            font-size: 13px;
+            margin-bottom: 8px;
+            line-height: 1.6;
+            list-style: disc;
+        }
+        .achievement-highlight {
+            font-weight: 500;
+            color: #000;
+        }
+        .education-item {
+            margin-bottom: 14px;
+        }
+        .degree {
+            font-weight: 600;
+            color: #000;
+            font-size: 14px;
+        }
+        .institution {
+            color: #0056b3;
+            font-weight: 500;
+            font-size: 13px;
+            margin-top: 3px;
+        }
+        .year {
+            color: #888;
+            font-size: 13px;
+        }
+        .cert-item {
+            margin-bottom: 10px;
+            font-size: 13px;
+            color: #555;
+        }
+        .cert-name {
+            font-weight: 500;
+            color: #000;
+        }
+        .tech-keywords {
+            font-size: 13px;
+            color: #666;
+            font-style: italic;
+            margin-top: 8px;
+            padding: 10px;
+            background: #f5f5f5;
+            border-left: 3px solid #0056b3;
+        }
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Carlos Andrés Martínez</h1>
+            <p class="headline">Cloud Architect & Security Lead | AWS • Azure • Kubernetes | DevOps Automation • IaC • Terraform</p>
+            <div class="contact">
+                <span>📧 charlysumo@gmail.com</span>
+                <span>🔗 linkedin.com/in/carlosamartinezs</span>
+                <span>🌐 cyberscuba.github.io</span>
+                <span>📍 Bogotá D.C., Colombia</span>
+            </div>
+        </header>
+
+        <section>
+            <h2>Perfil Profesional</h2>
+            <p class="summary">
+                Ingeniero Cloud & Security con <span class="achievement-highlight">5+ años</span> diseñando, implementando y operando infraestructuras resilientes, seguras y escalables en ambientes <span class="achievement-highlight">multi-nube (AWS, Azure, Oracle)</span>. Especialista en arquitectura cloud, <span class="achievement-highlight">automatización DevOps (Kubernetes, Terraform, IaC)</span> y ciberseguridad operativa (<span class="achievement-highlight">hardening, IAM, PCI-DSS, firewalls, VPN</span>). Enfoque en <span class="achievement-highlight">prevención y mitigación de incidentes</span>, implementando soluciones que reducen riesgos operacionales, garantizan continuidad de negocio y aceleran transformación digital en organizaciones corporativas críticas.
+            </p>
+        </section>
+
+        <section>
+            <h2>Competencias Técnicas</h2>
+
+            <div class="skills-block">
+                <div class="skill-category">Cloud & Infraestructura</div>
+                <div class="skill-list">AWS (EC2, S3, Lambda, RDS, VPC, CloudFormation) | Microsoft Azure (VMs, App Service, Azure SQL) | Oracle Cloud | Kubernetes (k8s, Docker, container orchestration) | VMware | Terraform | IaC (Infrastructure as Code)</div>
+            </div>
+
+            <div class="skills-block">
+                <div class="skill-category">Ciberseguridad & Compliance</div>
+                <div class="skill-list">Hardening (OS, firewalls, services) | IAM (Identity & Access Management) | VPN & Network Security | PCI-DSS Compliance | SSL/TLS | Firewalls (iptables, ufw) | Anomaly Detection | Security Monitoring | Incident Response | Disaster Recovery</div>
+            </div>
+
+            <div class="skills-block">
+                <div class="skill-category">DevOps & Automatización</div>
+                <div class="skill-list">CI/CD Pipelines (Jenkins, GitLab, GitHub Actions) | Ansible | Docker | Kubernetes Orchestration | GitOps | Infrastructure Automation | Monitoring & Observability (ML-based log analysis) | Performance Optimization | Bash Scripting | Deployment Automation</div>
+            </div>
+
+            <div class="skills-block">
+                <div class="skill-category">Lenguajes & Sistemas</div>
+                <div class="skill-list">Python | Go | Bash/Shell | PHP | Java | SQL | Linux Administration (CentOS, Ubuntu, Debian) | Windows Server | DNS | DHCP | Networking (TCP/IP, routing)</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Experiencia Profesional</h2>
+
+            <div class="job">
+                <div class="job-header">
+                    <span>
+                        <div class="job-title">Líder en Infraestructura y Ciberseguridad</div>
+                        <div class="company">Celuweb | Transformación Digital Multi-Nube</div>
+                    </span>
+                    <span class="date">abril 2021 - Present (5 años)</span>
+                </div>
+                <div class="job-description">
+                    Liderazgo en transformación digital y operación de infraestructuras multi-nube (AWS, Azure, Oracle) para <span class="achievement-highlight">100+ clientes corporativos críticos</span>, asegurando disponibilidad, seguridad y escalabilidad.
+                </div>
+                <ul class="achievements">
+                    <li><span class="achievement-highlight">Diseñé e implementé</span> arquitectura multi-nube con redundancia geográfica y escalabilidad automática | Terraform, CloudFormation | Resultado: <span class="achievement-highlight">99.95% uptime durante 18+ meses</span></li>
+                    <li><span class="achievement-highlight">Orquesté</span> automatización completa de infraestructuras mediante IaC | Terraform, Ansible, Python scripting | Resultado: <span class="achievement-highlight">reducción de 68% en tiempo de deployment manual (de 5.5h a 1.75h) y aceleración de 3x en releases</span></li>
+                    <li><span class="achievement-highlight">Implementé</span> hardening de seguridad operativa en IAM, firewalls, VPN y compliance PCI-DSS | AWS IAM policies, security groups, VPN tunnels | Resultado: <span class="achievement-highlight">eliminación de 34 vulnerabilidades críticas y conformidad PCI-DSS en 100% de infraestructuras</span></li>
+                    <li><span class="achievement-highlight">Establecí</span> pipelines CI/CD con Jenkins y GitLab | Automated testing, build & deployment stages | Resultado: <span class="achievement-highlight">aceleración de time-to-market (30 días → 8 días) y reducción de 62% en incidentes post-deployment</span></li>
+                </ul>
+                <div class="tech-keywords">Tech Stack: Terraform | Kubernetes | Docker | Ansible | AWS | Azure | Oracle Cloud | CI/CD (Jenkins, GitLab) | Python | Go | Bash | Hardening | PCI-DSS | ML Monitoring</div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span>
+                        <div class="job-title">Administrador de Servidores Linux & Soporte de Infraestructura</div>
+                        <div class="company">Skina Technologies S.A.S.</div>
+                    </span>
+                    <span class="date">febrero 2017 - marzo 2019 (2 años)</span>
+                </div>
+                <div class="job-description">
+                    Administración de infraestructura para clientes corporativos en entornos críticos con SLA 99.9%, configuración de servicios de red y seguridad.
+                </div>
+                <ul class="achievements">
+                    <li><span class="achievement-highlight">Administré</span> servidores Linux para 14 clientes corporativos | CentOS, Ubuntu, Debian | Resultado: <span class="achievement-highlight">SLA 99.9% mantenido consistentemente durante 24 meses sin desviaciones</span></li>
+                    <li><span class="achievement-highlight">Implementé y aseguré</span> infraestructuras en AWS y Google Cloud | Security groups, IAM, VPC configuration | Resultado: <span class="achievement-highlight">disponibilidad y escalabilidad garantizada para 23 aplicaciones críticas en producción</span></li>
+                    <li><span class="achievement-highlight">Configuré</span> servicios de red (Firewalls, DHCP, DNS, VPN) fortaleciendo seguridad | iptables, ufw, OpenVPN | Resultado: <span class="achievement-highlight">reducción de 48% en incidentes de seguridad (de 42 a 22 eventos/trimestre)</span></li>
+                    <li><span class="achievement-highlight">Redujo</span> tiempo de resolución de incidencias en <span class="achievement-highlight">42%</span> (MTTR 4.2h → 2.4h) mediante documentación y automatización de tareas recurrentes | Runbooks, Ansible playbooks</li>
+                </ul>
+                <div class="tech-keywords">Tech Stack: Linux | AWS | Google Cloud | Firewalls | VPN | DNS | DHCP | Bash | Security Hardening</div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span>
+                        <div class="job-title">Backend Developer</div>
+                        <div class="company">IGNIWEB</div>
+                    </span>
+                    <span class="date">febrero 2020 - marzo 2021 (1 año)</span>
+                </div>
+                <div class="job-description">
+                    Desarrollo y optimización de aplicaciones backend en entornos de producción, administración de servidores y automatización de procesos.
+                </div>
+                <ul class="achievements">
+                    <li><span class="achievement-highlight">Optimicé</span> aplicaciones backend en PHP | Query optimization, code refactoring | Resultado: <span class="achievement-highlight">incremento de rendimiento [25%]</span></li>
+                    <li><span class="achievement-highlight">Administré</span> servidores Linux y Windows | Garantizando disponibilidad y performance en entornos de producción</li>
+                    <li><span class="achievement-highlight">Implementé</span> automatización de despliegues con scripts Bash y PHP | Resultado: <span class="achievement-highlight">reducción significativa en tiempos de actualización y release</span></li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span>
+                        <div class="job-title">Desarrollador Jr</div>
+                        <div class="company">Gatoloco Studios S.A.S.</div>
+                    </span>
+                    <span class="date">noviembre 2019 - mayo 2020 (7 meses)</span>
+                </div>
+                <div class="job-description">
+                    Desarrollo de soluciones backend y APIs para facturación electrónica, asegurando integración, cumplimiento normativo y escalabilidad.
+                </div>
+                <ul class="achievements">
+                    <li><span class="achievement-highlight">Diseñé e implementé</span> API RESTful en PHP para facturación electrónica | Cumplimiento normativas fiscales | Resultado: <span class="achievement-highlight">reducción de errores de integración [95%]</span></li>
+                    <li><span class="achievement-highlight">Optimicé</span> rendimiento de API para manejo de grandes volúmenes de datos | Resultado: <span class="achievement-highlight">tiempos de respuesta más rápidos y mayor estabilidad</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Educación</h2>
+
+            <div class="education-item">
+                <div class="degree">Tecnólogo en Sistemas</div>
+                <div class="institution">Unitec (Universidad Tecnológica de Pereira)</div>
+                <div class="year">1996 - 2000</div>
+            </div>
+
+            <div class="education-item">
+                <div class="degree">Formación Continua en Tecnología</div>
+                <div class="institution">Cited - Mantenimiento de Computadores, Linux, Redes</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Certificaciones & Desarrollo Profesional</h2>
+
+            <div class="cert-item">
+                <span class="cert-name">Bootcamp SOC 2025</span> - En proceso | Especialización en Security Operations Center
+            </div>
+            <div class="cert-item">
+                <span class="cert-name">Certificaciones Técnicas: 23+</span> | AWS, Azure, Kubernetes, Docker, Java, PHP, Terminal, Backend Development
+            </div>
+            <div class="cert-item">
+                <span class="cert-name">Cursos Especializados:</span> Kubernetes | Docker | Introducción Terminal & CLI | Backend Development | Java SE Orientado a Objetos | Data Management (PHP)
+            </div>
+
+            <div class="tech-keywords" style="margin-top: 16px;">
+                <strong>Palabras Clave Técnicas Principales:</strong> Cloud Architecture | DevOps | Kubernetes | Docker | Terraform | IaC | AWS | Azure | Oracle Cloud | Ciberseguridad | PCI-DSS | Hardening | IAM | Linux | Windows | CI/CD | Jenkins | GitLab | Python | Go | Bash | API REST | Backend Development | Infrastructure as Code | Multi-Cloud Strategy | Disaster Recovery | Security Compliance
+            </div>
+        </section>
+    </div>
+</body>
+</html>
